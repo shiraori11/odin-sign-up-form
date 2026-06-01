@@ -93,19 +93,38 @@ body {
 }
 
 .left-panel-form-action button {
-  background-color: green;
+  background-color: darkolivegreen;
+  box-shadow: 3px 3px 2px lightgrey;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  height: 48px;
+  width: 220px;
+}
+
+.left-panel-form-action a {
+  color: darkolivegreen;
+  text-decoration: none;
 }
 
 .left-panel-input > input {
   width: 250px;
   margin: 0;
   border-radius: 5px;
+  border: lightgrey solid 2px;
 }
 
-.left-panel-input > input:user-valid {
+.left-panel-input > input:focus {
   border: blue solid 2px;
+  box-shadow: 5px 2px 5px lightblue;
+  outline: none;
 }
 
 .left-panel-input > input:user-invalid {
   border: red solid 2px;
+}
+
+.left-panel-input >input:user-valid {
+  border: green solid 2px;
 }
